@@ -1,0 +1,305 @@
+.toplevel_page_sd-tool .wp-menu-image img{
+	width: 24px;
+	padding: 6px 0px 0px 0px !important;
+}
+
+.font_16{
+	font-size: 16px;
+}
+
+.font_12{
+  font-size: 12px;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.switch_checkbox_label {
+  	position: relative;
+  	display: inline-block;
+  	width: 60px;
+  	height: 34px;
+}
+
+.switch_checkbox_label input { 
+  	opacity: 0;
+  	width: 0;
+  	height: 0;
+}
+
+.switch_checkbox_label .slider {
+  	position: absolute;
+  	cursor: pointer;
+  	top: 0;
+  	left: 0;
+  	right: 0;
+  	bottom: 0;
+  	background-color: #ccc;
+  	-webkit-transition: .4s;
+  	transition: .4s;
+}
+
+.switch_checkbox_label .slider:before {
+  	position: absolute;
+  	content: "";
+  	height: 26px;
+  	width: 26px;
+  	left: 4px;
+  	bottom: 4px;
+  	background-color: white;
+  	-webkit-transition: .4s;
+  	transition: .4s;
+}
+
+.switch_checkbox_label input:checked + .slider {
+  	background-color: #2196F3;
+}
+
+.switch_checkbox_label input:focus + .slider {
+  	box-shadow: 0 0 1px #2196F3;
+}
+
+.switch_checkbox_label input:checked + .slider:before {
+  	-webkit-transform: translateX(26px);
+  	-ms-transform: translateX(26px);
+  	transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.switch_checkbox_label .slider.round {
+  	border-radius: 34px;
+}
+
+.switch_checkbox_label .slider.round:before {
+ 	border-radius: 50%;
+}
+
+.on_off_text{
+	min-width: 60px;
+	position: absolute;
+	right: -70px;
+	top: 5px;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.on_off_text.enabled{
+	color: #00FF00;
+}
+
+.on_off_text.disabled{
+	color: #8c8f94;
+}
+
+.discount_rules_table th{
+	padding: 6px 0px 6px 0px;
+}
+
+.discount_rules_table td{
+	padding: 0px;
+}
+
+.d-flex{
+	display: flex;
+}
+
+.d-block{
+	display: block;
+}
+
+.discount_rules_table input{
+	width: 100%;
+}
+
+.button-danger{
+	background: #ff0000 !important;
+	color: #fff !important;
+	border: 2px solid #ff0000 !important;
+	border-radius: 3px !important;
+}
+
+.pl_0{
+	padding-left: 0px !important;
+}
+
+.divider_td hr{
+	border: 1px solid #333;
+	opacity: 0.4;
+}
+
+
+/*Accordian start*/
+ul.accordion-list {
+  	position: relative;
+  	display: block;
+  	height: auto;
+  	padding: 20px;
+  	margin: 0;
+  	list-style: none;
+  	background-color: #f9f9fa;
+}
+ul.accordion-list li {
+  	position: relative;
+  	display: block;
+  	height: auto;
+  	background-color: #fff;
+  	/*padding: 20px;*/
+  	margin: 0 auto 15px auto;
+  	border: 1px solid #eee;
+  	border-radius: 5px;
+}
+ul.accordion-list li.active .title:after {
+  	transform: rotate(45deg);
+  	color:  #FF0000;
+}
+ul.accordion-list li .title {
+  font-weight: 700;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 0 0 0 0;
+  margin: 0;
+  font-size: 22px;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  padding: 14px 10px;
+}
+ul.accordion-list li .title:after {
+  content: "";
+  font-family: "material-design-iconic-font";
+  position: absolute;
+  right: 30px;
+  top: 14px;
+  color: #00FF00;
+  transition: all 0.3s ease-in-out;
+  font-size: 18px;
+}
+ul.accordion-list li .content {
+  	position: relative;
+  	display: block;
+  	width: 100%;
+  	height: auto;
+  	margin: 0;
+  	padding: 0px 10px;
+}
+ul.accordion-list li .content p {
+  	position: relative;
+  	display: block;
+  	font-weight: 300;
+  	padding: 10px 0 0 0;
+  	cursor: pointer;
+  	line-height: 150%;
+  	margin: 0 0 15px 0;
+  	font-size: 14px;
+}
+/*Accordian end*/
+
+.sd_tool_response_message{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.sd_tool_response_message.success{
+	color: #00FF00;
+}
+
+.sd_tool_response_message.error{
+	color: #ff0404;
+}
+
+.ml-14{
+	margin-left: 14px;
+}
+
+
+/*Modal css start*/
+
+/* The Modal (background) */
+.sd_modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 99999; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.sd_modal_content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.sd_modal_close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 14px;
+}
+
+.sd_modal_close:hover,
+.sd_modal_close:focus {
+  color: #FF0000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.sd_modal_header {
+  padding: 2px 16px;
+  background-color: #2196F3;
+  color: white;
+}
+
+.sd_modal_header h2{
+	color: #fff;
+}
+
+.sd_modal_body {
+	padding: 20px 16px;
+	max-height: 360px;
+	overflow-y: scroll;
+}
+
+.sd_modal_footer {
+  padding: 2px 16px;
+  background-color: #2196F3;
+  color: white;
+}
+
+/*Modal css end*/
+
+.create_shortcode_form select, .create_shortcode_form input[type="text"]{
+	min-width: 230px;
+}
+.create_shortcode_form td{
+	padding: 15px 5px;
+}
